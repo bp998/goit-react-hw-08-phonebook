@@ -1,16 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import css from './ContactForm.module.css';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { addContact } from 'redux/operations';
 
 const ContactForm = () => {
+  const [isOnList, setIsOnList] = useState(null);
   const dispatch = useDispatch();
+  const contacts = useSelector(state => state.contacts);
   const handleSubmit = e => {
     e.preventDefault();
     const form = e.target;
     const name = form.elements.name.value;
     const number = form.elements.number.value;
-    dispatch(addContact({ name, number }));
+    if (contacts.items.find(el => el.name === name)) {
+      setIsOnList(true);
+    } else {
+      setIsOnList(false);
+      dispatch(addContact({ name, number }));
+    }
     form.reset();
   };
 
@@ -36,6 +43,7 @@ const ContactForm = () => {
         />
       </label>
       <button type="submit">Add contact</button>
+      {isOnList ? <span>Contact is already on your list</span> : null}
     </form>
   );
 };
