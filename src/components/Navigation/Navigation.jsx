@@ -5,7 +5,7 @@ import css from './Navigation.module.css';
 const Navigation = () => {
   const { isLoggedIn } = useAuth();
   return (
-    <nav>
+    <nav className={css.navBar}>
       <NavLink to="/" className={css.link}>
         Home
       </NavLink>

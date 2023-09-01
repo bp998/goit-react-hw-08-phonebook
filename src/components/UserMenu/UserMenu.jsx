@@ -8,13 +8,11 @@ const UserMenu = () => {
   const { user } = useAuth();
 
   return (
-    <div className={css.userMenu}>
-      <p className={css.userMenuName}>
-        <b>Welcome, {user.name}</b>
-      </p>
+    <div className={css.userCard}>
+      <p className={css.userName}>Nice to see you {user.name}!</p>
       <button
         type="button"
-        className={css.userMenuLogOut}
+        className={css.userLogOut}
         onClick={() => dispatch(logOut())}
       >
         Logout

@@ -1,0 +1,18 @@
+.userCard {
+  display: flex;
+  justify-content: space-between;
+}
+
+.userName {
+  padding-left: 30px;
+  font-size: 20px;
+}
+
+.userLogOut {
+  margin-right: 20px;
+  border: none;
+  background-color: orange;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 20px;
+}
