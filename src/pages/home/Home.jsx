@@ -11,6 +11,9 @@ const Home = () => {
       </HelmetProvider>
       <div className={css.welcome}>
         <h1>Welcome to Phonebook</h1>
+        <p className={css.homeText}>
+          Please login or register to use our application ⬆️
+        </p>
       </div>
     </>
   );

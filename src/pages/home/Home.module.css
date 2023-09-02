@@ -1,0 +1,9 @@
+.welcome {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.homeText {
+  font-size: 20px;
+}

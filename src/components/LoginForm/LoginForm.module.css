@@ -1,0 +1,35 @@
+.loginForm {
+  padding-left: 100px;
+}
+
+.loginLabel {
+  font-size: 20px;
+}
+.loginLabel p {
+  margin: 0px;
+}
+
+.loginInput {
+  padding: 5px;
+  margin-block: 5px;
+  background-color: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid black;
+}
+
+.loginInput:focus {
+  outline: none;
+}
+
+.loginButton {
+  display: flex;
+  margin-top: 20px;
+  padding: 10px;
+  border: none;
+  background-color: grey;
+  color: orange;
+  border-radius: 10px;
+  font-size: 20px;
+}

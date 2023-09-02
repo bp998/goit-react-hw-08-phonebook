@@ -1,0 +1,35 @@
+.registerForm {
+  padding-left: 100px;
+}
+
+.registerLabel {
+  font-size: 20px;
+}
+.registerLabel p {
+  margin: 0px;
+}
+
+.registerButton {
+  display: flex;
+  margin-top: 20px;
+  padding: 10px;
+  border: none;
+  background-color: grey;
+  color: orange;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.registerInput {
+  padding: 5px;
+  margin-block: 5px;
+  background-color: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid black;
+}
+
+.registerInput:focus {
+  outline: none;
+}

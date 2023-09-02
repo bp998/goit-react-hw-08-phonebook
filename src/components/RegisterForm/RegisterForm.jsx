@@ -24,11 +24,11 @@ const RegisterForm = () => {
       autoComplete="off"
     >
       <label className={css.registerLabel}>
-        <p>Username</p>
+        <p>Username:</p>
         <input className={css.registerInput} type="text" name="name" required />
       </label>
       <label className={css.registerLabel}>
-        <p>Email</p>
+        <p>Email:</p>
         <input
           className={css.registerInput}
           type="email"
@@ -37,7 +37,7 @@ const RegisterForm = () => {
         />
       </label>
       <label className={css.registerLabel}>
-        <p>Password</p>
+        <p>Password:</p>
         <input
           className={css.registerInput}
           type="password"
