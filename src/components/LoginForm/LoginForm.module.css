@@ -24,6 +24,7 @@
 }
 
 .loginButton {
+  cursor: pointer;
   display: flex;
   margin-top: 20px;
   padding: 10px;

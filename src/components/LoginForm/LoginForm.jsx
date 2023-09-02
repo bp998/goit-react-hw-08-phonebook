@@ -33,7 +33,7 @@ const LoginForm = () => {
         />
       </label>
       <button type="submit" className={css.loginButton}>
-        Log In
+        Login
       </button>
     </form>
   );

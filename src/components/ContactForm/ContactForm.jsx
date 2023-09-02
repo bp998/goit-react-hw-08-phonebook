@@ -26,6 +26,7 @@ const ContactForm = () => {
       <label>
         <p className={css.text}>Name</p>
         <input
+          className={css.input}
           type="text"
           name="name"
           title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
@@ -42,8 +43,12 @@ const ContactForm = () => {
           required
         />
       </label>
-      <button type="submit">Add contact</button>
-      {isOnList ? <span>Contact is already on your list</span> : null}
+      <button className={css.button} type="submit">
+        Add contact
+        {isOnList ? (
+          <span className={css.alert}>Contact is already on your list</span>
+        ) : null}
+      </button>
     </form>
   );
 };

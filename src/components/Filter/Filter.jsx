@@ -13,8 +13,13 @@ const Filter = () => {
 
   return (
     <label>
-      <p className={css.search}>Find contacts by name</p>
-      <input onChange={handleFilterChange} type="text" name="filter" />
+      <p className={css.search}>Find contacts by name:</p>
+      <input
+        className={css.input}
+        onChange={handleFilterChange}
+        type="text"
+        name="filter"
+      />
     </label>
   );
 };

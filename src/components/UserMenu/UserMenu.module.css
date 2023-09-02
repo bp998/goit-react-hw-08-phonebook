@@ -6,6 +6,9 @@
 .userName {
   padding-left: 30px;
   font-size: 20px;
+  justify-self: center;
+  flex-grow: 1;
+  align-self: center;
 }
 
 .userLogOut {
@@ -15,4 +18,5 @@
   border-radius: 20px;
   cursor: pointer;
   font-size: 20px;
+  padding-inline: 20px;
 }

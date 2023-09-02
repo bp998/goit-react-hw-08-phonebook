@@ -1,3 +1,17 @@
 .search {
-  margin-left: 20px;
+  margin: 0;
+  font-size: 20px;
+}
+
+.input {
+  padding: 5px;
+  margin-block: 5px;
+  background-color: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid black;
+}
+.input:focus {
+  outline: none;
 }

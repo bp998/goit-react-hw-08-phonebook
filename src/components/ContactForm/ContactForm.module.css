@@ -2,8 +2,42 @@
   display: flex;
   gap: 20px;
   align-items: flex-end;
+  padding-bottom: 70px;
 }
 
 .text {
-  margin: 3px;
+  font-size: 20px;
+  margin: 0;
+}
+
+.input {
+  padding: 5px;
+  background-color: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid black;
+}
+.input:focus {
+  outline: none;
+}
+
+.button {
+  padding: 10px;
+  border: none;
+  background-color: grey;
+  color: orange;
+  border-radius: 10px;
+  font-size: 15px;
+  position: relative;
+  cursor: pointer;
+}
+
+.alert {
+  font-weight: 700;
+  position: absolute;
+  left: -54px;
+  top: 47px;
+  color: red;
+  width: max-content;
 }
